@@ -1,0 +1,66 @@
+doctype html
+html
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            link(rel='stylesheet' href='/css/styles.css')
+            title Auth Task
+
+    body
+        h2 Weekly Coding Challenge #1: Sign in/up Form
+        #container.container
+            .form-container.sign-up-container
+                form(action='#')
+                    h1 Create Account
+                    .social-container
+                        a.social(href='#')
+                        i.fab.fa-facebook-f
+                        a.social(href='#')
+                        i.fab.fa-google-plus-g
+                        a.social(href='#')
+                        i.fab.fa-linkedin-in
+                    span or use your email for registration
+                    input(type='text' placeholder='Name')
+                    input(type='email' placeholder='Email')
+                    input(type='password' placeholder='Password')
+                    button Sign Up
+            .form-container.sign-in-container
+                form(action='#')
+                    h1 Sign in
+                    .social-container
+                        a.social(href='#')
+                        i.fab.fa-facebook-f
+                        a.social(href='#')
+                        i.fab.fa-google-plus-g
+                        a.social(href='#')
+                        i.fab.fa-linkedin-in
+                    span or use your account
+                    input(type='email' placeholder='Email')
+                    input(type='password' placeholder='Password')
+                    a(href='#') Forgot your password?
+                    button Sign In
+            .overlay-container
+                .overlay
+                    .overlay-panel.overlay-left
+                        h1 Welcome Back!
+                        p To keep connected with us please login with your personal info
+                        button#signIn.ghost Sign In
+                    .overlay-panel.overlay-right
+                        h1 Hello, Friend!
+                        p Enter your personal details and start journey with us
+                        button#signUp.ghost Sign Up
+        footer
+        p
+            | Created with 
+            i.fa.fa-heart
+            |  by
+            a(target='_blank' href='https://florin-pop.com') Florin Pop
+            | &#x9;&#x9;- Read how I created this and how you can join the challenge
+            a(target='_blank' href='https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/') here
+            | .
+
+
+
+
+        script(src='/js/main.js')
